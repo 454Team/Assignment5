@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 
-public class CourseIterator implements Iterator <Course> {
+public class CourseIterator implements Iterator <Student> {
 
 	@Override
 	public boolean hasNext() {
@@ -10,8 +10,8 @@ public class CourseIterator implements Iterator <Course> {
 	} // End hasNext
 
 	@Override
-	public Course next() {
-		
+	public Student next() {
+
 		return null;
 	} // End next
 
