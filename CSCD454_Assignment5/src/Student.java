@@ -16,18 +16,22 @@ public class Student {
 
 	public int getID() {
 		return ID;
-	}
+	} // End getID
 
 	public void setID(int iD) {
 		ID = iD;
-	}
+	} // End setID
 
 	public String getName() {
 		return name;
-	}
+	} // End getName
 
 	public void setName(String name) {
 		this.name = name;
+	} // End setName
+	
+	public String toString() {
+		return this.getName() + " " + this.getID() + "\n";
 	}
 
 } // End Student
