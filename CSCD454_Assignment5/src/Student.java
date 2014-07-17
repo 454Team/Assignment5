@@ -1,5 +1,5 @@
 
-public class Student {
+public class Student extends Course{
 	
 	private int ID;
 	private String name;
@@ -32,6 +32,6 @@ public class Student {
 	
 	public String toString() {
 		return this.getName() + " " + this.getID() + "\n";
-	}
+	} // End toString
 
 } // End Student

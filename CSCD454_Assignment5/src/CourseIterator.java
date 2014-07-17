@@ -1,21 +1,22 @@
 import java.util.Iterator;
 
 
-public class CourseIterator implements Iterator <Student> {
+public class CourseIterator implements Iterable <Course> {
 
 	@Override
+	public Iterator<Course> iterator() {
+		return null;
+	}
+	
 	public boolean hasNext() {
-		
 		return false;
 	} // End hasNext
 
-	@Override
-	public Student next() {
+	public Course next() {
 
 		return null;
 	} // End next
 
-	@Override
 	public void remove() {
 		
 	} // End remove
