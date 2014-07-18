@@ -37,7 +37,7 @@ public class Student {
 	} // End setName
 	
 	public String toString() {
-		return this.getName() + " " + this.getID();
+		return this.getName() + " - " + this.getID();
 	} // End toString
 
 } // End Student

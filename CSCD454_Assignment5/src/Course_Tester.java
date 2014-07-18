@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Iterator;
 /*
  * @author Kevin Borling
@@ -13,16 +12,12 @@ public class Course_Tester {
 	
 	public static void main(String[] args) {
 		
-		// Initialize and create student list
-		ArrayList<Student> students = new ArrayList<Student>();
-		students.add(new Student());
-		students.add(new Student(54321, "Chester Copperpot"));
-		students.add(new Student(10101, "Binary Bill"));
-		
-		Course course = new Course(students);
+		Course course = new Course();
 		
 		Iterator<Student> studentIterator = course.iterator();
-
+	
+		System.out.println("Course: " + course.toString());
+		System.out.println("\nStudent List:\nName - ID:");
 		
 		for(Student s : course) {
 			

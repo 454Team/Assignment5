@@ -11,10 +11,12 @@ import java.util.Iterator;
 
 public class Course implements Iterable<Student> {
 
-	ArrayList<Student> students;
-
-	public Course(ArrayList<Student> students) {
-		this.students = students;
+	private ArrayList<Student> students;
+	private String courseName;
+	
+	public Course() {
+		this.students = createStudentList();
+		this.courseName = "CPLA 3000";
 	} // End Course Constructor
 	
 	@Override
@@ -22,10 +24,21 @@ public class Course implements Iterable<Student> {
 		return new CourseIterator(students);
 	} // End Iterator Constructor
 
+	/*
+	 * Creates student list for the course
+	 */
+	private ArrayList<Student> createStudentList()
+	{
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		studentList.add(new Student());
+		studentList.add(new Student(54321, "Chester Copperpot"));
+		studentList.add(new Student(10101, "Binary Bill"));
+		return studentList;
+	} // End createStudentList
 
-
-
-
+	public String toString() {
+		return this.courseName;
+	}
 	
 
 } // End Course

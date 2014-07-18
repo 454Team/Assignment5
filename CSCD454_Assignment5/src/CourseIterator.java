@@ -10,8 +10,8 @@ import java.util.Iterator;
 
 public class CourseIterator implements Iterator<Student> {
 	
-	ArrayList<Student> students;
-	int index;
+	private ArrayList<Student> students;
+	private int index;
 	
 	public CourseIterator(ArrayList<Student> students) {
 		this.students = students;

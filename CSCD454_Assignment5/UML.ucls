@@ -67,7 +67,9 @@
   <association id="12">    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="13" name="students"/>      
-      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+      <multiplicity id="14" minimum="0" maximum="2147483647">        
+        <position x="750" y="474" width="21" height="16"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
