@@ -1,5 +1,11 @@
-
-public class Student extends Course{
+/*
+ * @author Kevin Borling
+ * @author Anatoliy Kozlov
+ * @author Quyen Ha
+ * CSCD 454 | Design Patterns
+ * Assignment 5 | Iterator
+ */
+public class Student {
 	
 	private int ID;
 	private String name;
@@ -31,7 +37,7 @@ public class Student extends Course{
 	} // End setName
 	
 	public String toString() {
-		return this.getName() + " " + this.getID() + "\n";
+		return this.getName() + " " + this.getID();
 	} // End toString
 
 } // End Student

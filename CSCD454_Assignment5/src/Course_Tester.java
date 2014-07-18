@@ -1,24 +1,34 @@
 import java.util.ArrayList;
-
+/*
+ * @author Kevin Borling
+ * @author Anatoliy Kozlov
+ * @author Quyen Ha
+ * CSCD 454 | Design Patterns
+ * Assignment 5 | Iterator
+ * Implemented using an ArrayList of type Student.
+ * The remove method was created, but returns an UnsupportedOperationException.
+ */
 
 public class Course_Tester {
 	
 	public static void main(String[] args) {
 		
-		ArrayList<Course> course = new ArrayList<Course>();
+		// Initialize and create student list
+		ArrayList<Student> students = new ArrayList<Student>();
+		students.add(new Student());
+		students.add(new Student(54321, "Chester Copperpot"));
+		students.add(new Student(10101, "Binary Bill"));
 		
-		CourseIterator courseIterator = new CourseIterator();
+		CourseIterator courseIterator = new CourseIterator(students);
 		
-		for(Course c : course) {
+		for(Student s : students) {
 			
 			if(!courseIterator.hasNext())
 				return;
 			
-			courseIterator.next();
-			System.out.println(c.toString());
+			s = courseIterator.next();
 			
-			// Remove every student after each print
-			courseIterator.remove();
+			System.out.println(s.toString());
 		} // End for each
 		
 	} // End main
