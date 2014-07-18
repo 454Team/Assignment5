@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Iterator;
+
 /*
  * @author Kevin Borling
  * @author Anatoliy Kozlov
@@ -7,9 +9,23 @@ import java.util.ArrayList;
  * Assignment 5 | Iterator
  */
 
-public class Course extends CourseIterator {
-	
+public class Course implements Iterable<Student> {
+
+	ArrayList<Student> students;
+
 	public Course(ArrayList<Student> students) {
-		super(students);		
-	} // End Course Constructor
+		this.students = students;
+	}
+	
+	@Override
+	public Iterator<Student> iterator() {
+		return new CourseIterator(students);
+	}
+
+
+
+
+
+	
+
 } // End Course

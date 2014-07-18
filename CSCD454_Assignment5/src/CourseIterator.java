@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 /*
  * @author Kevin Borling
  * @author Anatoliy Kozlov
@@ -7,7 +8,7 @@ import java.util.ArrayList;
  * Assignment 5 | Iterator
  */
 
-public class CourseIterator implements Iterable {
+public class CourseIterator implements Iterator<Student> {
 	
 	ArrayList<Student> students;
 	int index;

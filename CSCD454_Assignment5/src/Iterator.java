@@ -6,7 +6,7 @@
  * Assignment 5 | Iterator
  */
 
-public interface Iterable {
+public interface Iterator {
 	public boolean hasNext();
 	public Student next();
 	public void remove();
