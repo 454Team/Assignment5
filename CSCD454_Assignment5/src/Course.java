@@ -15,12 +15,12 @@ public class Course implements Iterable<Student> {
 
 	public Course(ArrayList<Student> students) {
 		this.students = students;
-	}
+	} // End Course Constructor
 	
 	@Override
 	public Iterator<Student> iterator() {
 		return new CourseIterator(students);
-	}
+	} // End Iterator Constructor
 
 
 

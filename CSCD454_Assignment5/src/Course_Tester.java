@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 /*
  * @author Kevin Borling
  * @author Anatoliy Kozlov
@@ -8,11 +9,9 @@ import java.util.ArrayList;
  * Implemented using an ArrayList of type Student.
  * The remove method was created, but returns an UnsupportedOperationException.
  */
-
 public class Course_Tester {
 	
 	public static void main(String[] args) {
-		
 		
 		// Initialize and create student list
 		ArrayList<Student> students = new ArrayList<Student>();
@@ -22,14 +21,15 @@ public class Course_Tester {
 		
 		Course course = new Course(students);
 		
-		CourseIterator courseIterator = new CourseIterator(students);
+		Iterator<Student> studentIterator = course.iterator();
+
 		
 		for(Student s : course) {
 			
-			if(!courseIterator.hasNext())
+			if(!studentIterator.hasNext())
 				return;
 			
-			s = courseIterator.next();
+			s = studentIterator.next();
 			
 			System.out.println(s.toString());
 		} // End for each

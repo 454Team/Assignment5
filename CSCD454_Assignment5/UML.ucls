@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
   <class id="1" language="java" name="CourseIterator" project="CSCD454_Assignment5" 
     file="/CSCD454_Assignment5/src/CourseIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position x="586" y="60" width="197" height="153"/>    
+    <position x="609" y="62" width="-1" height="-1"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="Course_Tester" project="CSCD454_Assignment5" 
     file="/CSCD454_Assignment5/src/Course_Tester.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position x="797" y="-79" width="113" height="99"/>    
+    <position x="977" y="34" width="-1" height="-1"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="Course" project="CSCD454_Assignment5" file="/CSCD454_Assignment5/src/Course.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position x="599" y="253" width="163" height="81"/>    
+    <position x="606" y="291" width="-1" height="-1"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,21 +57,17 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency id="10">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="11">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <dependency id="12">    
+  <dependency id="11">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <association id="13">    
+  <association id="12">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="14" name="students"/>      
-      <multiplicity id="15" minimum="0" maximum="2147483647"/>    
+      <attribute id="13" name="students"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
